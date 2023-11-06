@@ -1,0 +1,109 @@
+* {
+  text-decoration: none;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+/*Modo oscuro/claro imagen*/
+.header-dark {
+  background-image: url('image/20231003_172252.jpg');
+  background-size: cover; /* Ajusta la imagen al tamaño del encabezado */
+  height: 500px; /* Ajusta la altura del encabezado según tus necesidades */
+  color: #fff; /* Color del texto en el encabezado */
+  text-align: center; /* Alinea el contenido al centro */
+  padding: 20px; /* Espacio interno alrededor del contenido */
+}
+
+.header-light {
+  background-image: url('image/1698951907866.jpg');
+  background-size: cover; /* Ajusta la imagen al tamaño del encabezado */
+  height: 500px; /* Ajusta la altura del encabezado según tus necesidades */
+  color: #fff; /* Color del texto en el encabezado */
+  text-align: center; /* Alinea el contenido al centro */
+  padding: 20px; /* Espacio interno alrededor del contenido */
+}
+
+/*Modo oscuro/claro el body*/
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff; 
+}
+
+button#modoOscuro {
+  object-fit: fill;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  align-self: center;
+  width: 100px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  height: 100px;
+}
+
+header#cabeceraweb {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  object-fit: fill;
+  padding-top: 0;
+  margin-top: 0;
+  /*Esto del border es solo de prueba para saber sobre qué dimensiones puedo escribir
+  border-width: 1px;
+  border-style: double;
+  border-color: black;
+  width: 100%;*/
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+footer{
+  text-align: center;
+  padding-top: 5px;
+  border-width: 1px;
+  border-style: double;
+  border-color: black;
+  width: 100%;
+  background-color: cadetblue;
+}
+
+.icono-social {
+  text-decoration: none;
+  width: 25px;
+  height: 25px;
+  /*background-color: antiquewhite;
+  border-radius: 100%;*/
+}
+
+.iconos {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+
+/*Botón de ir al inicio */
+
+button#irArribaBtn {
+  object-fit: fill;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  align-self: center;
+  width: 40px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  height: 40px;
+}
+
+.imagenSubir {
+  width: 25px;
+  height: 25px;
+  object-fit: fill;
+}

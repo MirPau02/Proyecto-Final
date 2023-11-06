@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title> Proyecto Final </title>
+
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+
+    <meta charset="iso-8559-1" />
+    <meta name="description" content="TFG de Grado Superior" />
+    <meta name="keywords" content="html5, css3, Javascript, diseño web" />
+    <!-- Lo que busquemos en Google, si se usa una palabra clave como las que hemos escrito, hay más posibilidades de que aparezca nuestra página web-->
+</head>
+
+<body class="light-mode">
+    <header class="header-light">
+
+    </header>
+
+    <button id="modoOscuro">Cambiar Modo</button>
+
+    <nav id="navegacionprincipal"> <!-- Barra de Navegación -->
+        <ul> <!-- unorder list (listado en puntos)-->
+            <li> Quiénes somos </li>
+            <li> Nuestros productos </li>
+            <li> Contáctanos </li>
+            <li> Precios </li>
+        </ul>
+
+        <ol> <!-- order list (listado en números/orden)-->
+            <li> Quiénes somos </li>
+            <li> Nuestros productos </li>
+            <li> Contáctanos </li>
+            <li> Precios </li>
+        </ol>
+    </nav>
+
+    <aside id="barralateral"> <!-- Barra lateral -->
+        <blockquote> Primer elemento </blockquote> <!-- blockquote se utiliza para largas citas -->
+        <blockquote> Segundo elemento </blockquote>
+        <blockquote> Tercer elemento </blockquote>
+    </aside>
+
+    <section id="contenidoprincipal"> <!-- Contenido principal -->
+
+        <article> <!-- Se usa para agrupar contenido que tenga que ver -->
+
+            <header>
+                <hgroup>
+                    <!-- Se usa para agrupar títulos y subtítulos, si sólo tienes un h1 por ejemplo no haría falta -->
+                    <h2> Título de la noticia 1</h2>
+                    <!-- Si ponemos h1 y luego h2, nos sale el subtítulo más grande que el título, por eso ponemos h2 y h3-->
+                    <h3> Subtítulo de la noticia 1</h3>
+                </hgroup>
+            </header>
+
+            <figure>
+                <img src="C:\Users\pau\Desktop\HTML\imagenes\paisaje_japon.jpg" />
+                <!--  <img src="imagenes\paisaje_japon.jpg"/>  Esto también serviría, ruta relativa o absoluta-->
+                <figcaption> Paisaje Japonés </figcaption> <!-- Escribir un pie de foto -->
+            </figure>
+
+            <p> <mark> Noticia 1 </mark> </p> <!-- "mark" hace que resalte en subrayado el texto -->
+            <p> Seguimos hablando de <em> noticia 1 </em> </p> <!-- "em" = Cursiva-->
+            <p> Terminamos de hablar de la <strong> noticia 1 </strong> </p> <!-- "strong" = Negrita-->
+
+            <footer>
+                <p> Comentarios de usuarios </p>
+            </footer>
+
+        </article>
+
+        <article>
+
+            <header>
+                <h2> Título de la noticia 2</h2>
+            </header>
+
+            <p> <cite> El gato con botas </cite> </p>
+            <!-- "cite" = Títulos de libros, canciones, películas, trabajos propios, etc-->
+            <p> Una de las películas que más me ha gustado es <cite> El gato con botas 2 </cite> </p>
+            <p> Terminamos de hablar de la noticia 2 </p>
+
+            <footer>
+                <p> Comentarios </p>
+            </footer>
+
+        </article>
+
+        <article>
+
+            <header>
+                <hgroup>
+                    <h2> Título de la noticia 3</h2>
+                    <h3> Subtítulo de la noticia 3</h3>
+                </hgroup>
+                <time datetime="2023/01/31" pubdate> Noticia publicada el día 31/01/2023 </time>
+                <!-- Representar fechas y horas-->
+            </header>
+
+            <p> Noticia 3 </p>
+            <p> Seguimos hablando de noticia 3 </p>
+            <p> Terminamos de hablar de la noticia 3</p>
+
+        </article>
+
+    </section>
+    
+    <button id="irArribaBtn" title="Inicio">
+        <img src="image/icon-arrow-up.png" class="imagenSubir"/>
+    </button>
+
+
+      
+    
+    <footer> <!-- Información institucional -->
+        <div class="iconos">
+            <a href="https://www.google.com/search?q=google+snake&client=firefox-b-d&sca_esv=569475139&sxsrf=AM9HkKntoTES-XJEATN4DK_rFAzLVgfXUg%3A1696007037644&ei=fQMXZdPqJtq6kdUP07XUmQI&oq=googel&gs_lp=Egxnd3Mtd2l6LXNlcnAiBmdvb2dlbCoCCAAyBxAjGLECGCcyBxAjGLECGCcyDRAuGIoFGLEDGIMBGEMyBxAAGIoFGEMyBxAuGIoFGEMyBxAAGIoFGEMyExAuGIoFGLEDGIMBGMcBGNEDGEMyDRAAGIoFGLEDGIMBGEMyBxAAGIoFGEMyBxAAGIoFGEMyHBAuGIoFGLEDGIMBGEMYlwUY3AQY3gQY4ATYAQFIvxNQ8wNYwQhwAXgBkAEAmAFpoAGlBKoBAzQuMrgBA8gBAPgBAcICChAAGEcY1gQYsAPCAgoQABiKBRiwAxhDwgIKEC4YigUYsAMYQ8ICBxAjGIoFGCfCAgQQIxgnwgIWEC4YigUYQxiXBRjcBBjeBBjgBNgBAeIDBBgAIEGIBgGQBgq6BgYIARABGBQ&sclient=gws-wiz-serp"
+                title="Instagram">
+                <img src="image/instagram.png" alt="Instagram" class="icono-social"/>
+            </a>
+            <a href="https://twitter.com/Paumiralles_02" title="Twitter">
+                <img src="image/twitter.png" alt="Twitter" class="icono-social"/>
+            </a>
+            <a href="https://www.tiktok.com/@paumiralles02" title="Tik Tok">
+                <img src="image/tik-tok.png" alt="Tik Tok" class="icono-social">
+            </a>
+        </div>
+        
+        <!-- "small" = Presentar textos legales -->
+        <small> Derechos reservados </small> 
+        <!-- "address" = Para información de contacto. Debe ir dentro del footer -->
+        <address> Tfno: +34 655670159 </address>
+        <address> paumirallesdiaz@gmail.com </address>
+    </footer>
+
+
+</body>
+
+</html>
