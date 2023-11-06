@@ -1,2 +1,2 @@
 # TFG
-Trabajo Final de Gradp
+Trabajo Final de Grado
