@@ -10,14 +10,14 @@ document.addEventListener('DOMContentLoaded', function () {
 //Modo claro / oscuro IMAGEN
 
 document.addEventListener('DOMContentLoaded', () => {
-  const header = document.querySelector('header');
+  const nav = document.querySelector('nav');
   const toggleModeButton = document.getElementById('modoOscuro');
 
   // Manejar el evento de clic en el botón
   toggleModeButton.addEventListener('click', () => {
       // Alternar las clases para cambiar el modo
-      header.classList.toggle('header-light');
-      header.classList.toggle('header-dark');
+      nav.classList.toggle('header-light');
+      nav.classList.toggle('header-dark');
   });
 });
 

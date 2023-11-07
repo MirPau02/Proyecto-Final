@@ -39,8 +39,11 @@ button#modoOscuro {
   cursor: pointer;
   align-self: center;
   width: 100px; /* Ajusta el tamaño de la imagen según tus necesidades */
-  height: 100px;
+  height: 50px;
+  border-radius: 25%;
 }
+
+/*Ajustes html*/
 
 header#cabeceraweb {
   text-align: center;
@@ -110,6 +113,7 @@ button#irArribaBtn {
   color: #fff; /* Color de texto de la barra de navegación */
   padding: 10px; /* Espacio alrededor de los elementos de navegación */
   text-align: center;
+  padding: 0 15px;
 }
 
 .barraSuperior a {
@@ -128,6 +132,7 @@ button#irArribaBtn {
   display: inline-block;
   margin-left: 20px;
   color: initial; /* Establece el color de enlace predeterminado */
+  text-decoration: none;
 }
 
 .barraSuperior a span {
