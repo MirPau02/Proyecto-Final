@@ -8,20 +8,17 @@
 /*Modo oscuro/claro imagen*/
 .header-dark {
   background-image: url('image/20231003_172252.jpg');
+  background-repeat: no-repeat;
   background-size: cover; /* Ajusta la imagen al tamaño del encabezado */
   height: 500px; /* Ajusta la altura del encabezado según tus necesidades */
-  color: #fff; /* Color del texto en el encabezado */
-  text-align: center; /* Alinea el contenido al centro */
-  padding: 20px; /* Espacio interno alrededor del contenido */
 }
 
 .header-light {
   background-image: url('image/1698951907866.jpg');
-  background-size: cover; /* Ajusta la imagen al tamaño del encabezado */
+  /*background-size: cover; /* Ajusta la imagen al tamaño del encabezado */
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 500px; /* Ajusta la altura del encabezado según tus necesidades */
-  color: #fff; /* Color del texto en el encabezado */
-  text-align: center; /* Alinea el contenido al centro */
-  padding: 20px; /* Espacio interno alrededor del contenido */
 }
 
 /*Modo oscuro/claro el body*/
@@ -89,7 +86,6 @@ footer{
   gap: 10px;
 }
 
-
 /*Botón de ir al inicio */
 
 button#irArribaBtn {
@@ -106,4 +102,39 @@ button#irArribaBtn {
   width: 25px;
   height: 25px;
   object-fit: fill;
+}
+
+/*Estilos para la barra superior*/
+.barraSuperior {
+  background-color: #000000; /* Color de fondo de la barra de navegación */
+  color: #fff; /* Color de texto de la barra de navegación */
+  padding: 10px; /* Espacio alrededor de los elementos de navegación */
+  text-align: center;
+}
+
+.barraSuperior a {
+  display: inline-block; /* Hace que los elementos se muestren en línea horizontalmente */
+  margin-left: 20px; /* Agrega un margen entre los elementos */
+  color: #fff;
+}
+
+.barraSuperior a:visited {
+  display: inline-block; /* Hace que los elementos se muestren en línea horizontalmente */
+  margin-left: 20px; /* Agrega un margen entre los elementos */
+  color: purple;
+}
+
+.barraSuperior a:link {
+  display: inline-block;
+  margin-left: 20px;
+  color: initial; /* Establece el color de enlace predeterminado */
+}
+
+.barraSuperior a span {
+  display: inline-block; /* Hace que los elementos span se muestren en línea horizontalmente */
+  margin-right: 5px; /* Agrega un margen entre los elementos span y los h3 */
+}
+
+.barraSuperior a h3 {
+  display: inline-block; /* Hace que los elementos h3 se muestren en línea horizontalmente */
 }
