@@ -1,28 +1,3 @@
-#main-menu {
-  float: right;
-	text-align: center;
-}
-#main-menu .menu-item {
-  display: inline-block;
-	padding: 15px 15px;
-  border-radius: 5px;  
-	font-size: 16px;
-	font-weight: 600; /* o font-weight: bold; */	
-	text-transform: uppercase;
-	color: #39464f;	
-}
-#main-menu .menu-item:hover {
-	background-color: #3bb375;
-	color: #fff;
-}
-
-/* SLIDER Section ================================= */
-
-/* --- APARTADO 2 --- */
-/* #slider {
-	height: 600px;
-} */
-
 #box-slider {
   width: 100%;
 	height: 100%;

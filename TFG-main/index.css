@@ -89,13 +89,26 @@ footer{
 }
 
 button#irArribaBtn {
-  object-fit: fill;
+  object-fit: fill; /*QUE HACE*/
   bottom: 20px;
   right: 20px;
-  cursor: pointer;
+  cursor: pointer; /*QUE HACE*/
   align-self: center;
-  width: 40px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  width: 40px;
   height: 40px;
+
+  border-width: 1px;
+  border-style: double;
+  border-color: black;
+}
+
+button.trailer {
+  width: 65px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  height: 40px;
+}
+
+button.trailer:hover {
+  background-color: red;
 }
 
 .imagenSubir {
