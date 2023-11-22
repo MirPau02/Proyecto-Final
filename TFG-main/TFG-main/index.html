@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title> GOTY </title>
+
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" href="image/videojuegos.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/style_no_modificar.css">
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="iso-8559-1" />
+    <meta name="description" content="TFG de Grado Superior" />
+    <meta name="keywords" content="html5, css3, Javascript, diseño web" />
+    <!-- Lo que busquemos en Google, si se usa una palabra clave como las que hemos escrito, hay más posibilidades de que aparezca nuestra página web-->
+</head>
+
+<body class="light-mode">
+    <header class="barraSuperior">
+        <div>
+            <button id="modoOscuro">
+                <span class="material-symbols-outlined">
+                    clear_day
+                </span>
+                <span class="material-symbols-outlined">
+                    dark_mode
+                </span>
+            </button>
+            <a href="#">
+                <span class="material-symbols-outlined"> Home </span>
+                <h3>Inicio</h3>
+            </a>
+            <a href="./paginas/acercade.html">
+                <span class="material-symbols-outlined"> info </span>
+                <h3>Acerca de</h3>
+            </a>
+            <a href="#">
+                <span class="material-symbols-outlined"> search </span>
+                <h3>Servicios</h3>
+            </a>
+            <a href="./paginas/contacto.html">
+                <span class="material-symbols-outlined"> call </span>
+                <h3>Contacto</h3>
+            </a>
+            <a href="#">
+                <span class="material-symbols-outlined"> login </span>
+                <h3>Registrarse</h3>
+            </a>
+        </div>
+    </header>
+
+
+    <nav class="header-light"> </nav> <!-- IMAGEN CAMBIAR CLARO OSCURO -->
+
+    <section id="slider">
+        <!-- <div id="box-slider"> fondo¿?¿?¿?¿?¿?
+          <img class="slider-image" src="assets/img/slide.jpg" alt="Slide image">
+        </div> -->
+        <!-- APARTADO 3 -->
+        <div class="wrapper-banners">
+            <div class="row">
+                <div class="col-4">
+                    <div class="box-banner">
+                        <img class="banner-image" src="./image/mariowonder.jpg" alt="Banner image">
+                        <h2 class="banner-title">Super Mario <br> Wonder </h2>
+                        <p class="banner-text">DESCRIPCION DEL JUEGO</p>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="box-banner">
+                        <img class="banner-image" src="./image/alanwake2.jpg" alt="Banner image">
+                        <h2 class="banner-title">Alan Wake 2</h2>
+                        <p class="banner-text">DESCRIPCION DEL JUEGO</p>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="box-banner">
+                        <img class="banner-image" src="./image/zeldatotk.png" alt="Banner image">
+                        <h2 class="banner-title">Spiderman 2</h2>
+                        <p class="banner-text">DESCRIPCION DEL JUEGO</p>
+                    </div>
+                </div>
+
+
+                <!-- <div class="col-4">
+                    <div class="box-banner">
+                        <img class="banner-image" src="./image/mariowonder.jpg" alt="Banner image">
+                        <h2 class="banner-title">Super Mario <br> Wonder </h2>
+                        <p class="banner-text">DESCRIPCION DEL JUEGO</p>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="box-banner">
+                        <img class="banner-image" src="./image/baldursgate3.jpg" alt="Banner image">
+                        <h2 class="banner-title">Alan Wake 2</h2>
+                        <p class="banner-text">DESCRIPCION DEL JUEGO</p>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="box-banner">
+                        <img class="banner-image" src="./image/spiderman2.jpg" alt="Banner image">
+                        <h2 class="banner-title">Spiderman 2</h2>
+                        <p class="banner-text">DESCRIPCION DEL JUEGO</p>
+                    </div>
+                </div> -->
+
+    </section>
+
+    <button id="irArribaBtn" title="Inicio">
+        <img src="image/icon-arrow-up.png" class="imagenSubir" />
+    </button>
+
+    <footer> <!-- Información institucional -->
+        <div class="iconos">
+            <a href="https://www.google.com/search?q=google+snake&client=firefox-b-d&sca_esv=569475139&sxsrf=AM9HkKntoTES-XJEATN4DK_rFAzLVgfXUg%3A1696007037644&ei=fQMXZdPqJtq6kdUP07XUmQI&oq=googel&gs_lp=Egxnd3Mtd2l6LXNlcnAiBmdvb2dlbCoCCAAyBxAjGLECGCcyBxAjGLECGCcyDRAuGIoFGLEDGIMBGEMyBxAAGIoFGEMyBxAuGIoFGEMyBxAAGIoFGEMyExAuGIoFGLEDGIMBGMcBGNEDGEMyDRAAGIoFGLEDGIMBGEMyBxAAGIoFGEMyBxAAGIoFGEMyHBAuGIoFGLEDGIMBGEMYlwUY3AQY3gQY4ATYAQFIvxNQ8wNYwQhwAXgBkAEAmAFpoAGlBKoBAzQuMrgBA8gBAPgBAcICChAAGEcY1gQYsAPCAgoQABiKBRiwAxhDwgIKEC4YigUYsAMYQ8ICBxAjGIoFGCfCAgQQIxgnwgIWEC4YigUYQxiXBRjcBBjeBBjgBNgBAeIDBBgAIEGIBgGQBgq6BgYIARABGBQ&sclient=gws-wiz-serp"
+                title="Instagram">
+                <img src="image/instagram.png" alt="Instagram" class="icono-social" />
+            </a>
+            <a href="https://twitter.com/Paumiralles_02" title="Twitter">
+                <img src="image/twitter.png" alt="Twitter" class="icono-social" />
+            </a>
+            <a href="https://www.tiktok.com/@paumiralles02" title="Tik Tok">
+                <img src="image/tik-tok.png" alt="Tik Tok" class="icono-social">
+            </a>
+        </div>
+
+        <!-- "small" = Presentar textos legales -->
+        <small> Derechos reservados </small>
+        <!-- "address" = Para información de contacto. Debe ir dentro del footer -->
+        <address> Tfno: +34 655670159 </address>
+        <address> paumirallesdiaz@gmail.com </address>
+    </footer>
+</body>
+
+</html>

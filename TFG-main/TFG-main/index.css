@@ -1,0 +1,127 @@
+* {
+  text-decoration: none;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+/*Modo oscuro/claro imagen*/
+.header-dark {
+  background-image: url('image/20231003_172252.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; /* Ajusta la imagen al tamaño del encabezado */
+  width: 100%;
+  height: 500px; /* Ajusta la altura del encabezado según tus necesidades */
+}
+
+.header-light {
+  background-image: url('image/1698951907866.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px; /* Ajusta la altura del encabezado según tus necesidades */
+}
+
+/*Modo oscuro/claro el body*/
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark-mode {
+  background-color: #171717;
+  color: #ffffff; 
+}
+
+button#modoOscuro {
+  object-fit: fill;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  align-self: center;
+  width: 100px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  height: 50px;
+  border-radius: 25%;
+}
+
+/*Ajustes html*/
+
+header#cabeceraweb {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  object-fit: fill;
+  padding-top: 0;
+  margin-top: 0;
+  /*Esto del border es solo de prueba para saber sobre qué dimensiones puedo escribir
+  border-width: 1px;
+  border-style: double;
+  border-color: black;
+  width: 100%;*/
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+footer{
+  text-align: center;
+  padding-top: 5px;
+  border-width: 1px;
+  border-style: double;
+  border-color: black;
+  width: 100%;
+  background-color: cadetblue;
+}
+
+.icono-social {
+  text-decoration: none;
+  width: 25px;
+  height: 25px;
+}
+
+.iconos {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+button#irArribaBtn {
+  object-fit: fill;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  align-self: center;
+  width: 40px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  height: 40px;
+}
+
+.imagenSubir {
+  width: 25px;
+  height: 25px;
+  object-fit: fill;
+}
+
+/*Estilos para la barra superior*/
+.barraSuperior {
+  background-color: cadetblue; /* Color de fondo de la barra de navegación */
+  color: #fff; /* Color de texto de la barra de navegación */
+  padding: 10px; /* Espacio alrededor de los elementos de navegación */
+  text-align: center;
+  padding: 0 15px;
+  border-width: 1px;
+  border-style: double;
+  border-color: black;
+}
+
+.barraSuperior a {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #fff;
+}
+
+.barraSuperior a h3 {
+  display: inline-block; /* Hace que los elementos h3 se muestren en línea horizontalmente */
+}

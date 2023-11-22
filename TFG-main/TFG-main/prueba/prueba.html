@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Desplegable con Botón Hamburguesa</title>
+    <link rel="stylesheet" href="tu-archivo-de-estilos.css">
+</head>
+<body>
+    <input type="checkbox" id="btn-menu" />
+    <label class="lbl-menu" for="btn-menu">
+        <span id="spn1"></span>
+        <span id="spn2"></span>
+        <span id="spn3"></span>
+    </label>
+    <nav class="menu-dropdown">
+        <ul>
+            <li><a href="#">Opción 1</a></li>
+            <li><a href="#">Opción 2</a></li>
+            <li><a href="#">Opción 3</a></li>
+        </ul>
+    </nav>
+
+    <style>
+        /* Tu CSS existente */
+
+        .menu-dropdown {
+            position: absolute;
+            top: 50px; /* Ajusta la posición vertical del menú desplegable según tu diseño */
+            left: 0;
+            background-color: #fff;
+            display: none;
+        }
+
+        .menu-dropdown ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu-dropdown ul li {
+            padding: 10px;
+        }
+
+        #btn-menu:checked ~ .menu-dropdown {
+            display: block;
+        }
+    </style>
+</body>
+</html>
