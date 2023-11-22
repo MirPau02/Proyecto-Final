@@ -10,14 +10,15 @@
   background-image: url('image/20231003_172252.jpg');
   background-repeat: no-repeat;
   background-size: cover; /* Ajusta la imagen al tamaño del encabezado */
+  width: 100%;
   height: 500px; /* Ajusta la altura del encabezado según tus necesidades */
 }
 
 .header-light {
   background-image: url('image/1698951907866.jpg');
-  /*background-size: cover; /* Ajusta la imagen al tamaño del encabezado */
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
   height: 500px; /* Ajusta la altura del encabezado según tus necesidades */
 }
 
@@ -78,8 +79,6 @@ footer{
   text-decoration: none;
   width: 25px;
   height: 25px;
-  /*background-color: antiquewhite;
-  border-radius: 100%;*/
 }
 
 .iconos {
@@ -88,8 +87,6 @@ footer{
   flex-direction: row;
   gap: 10px;
 }
-
-/*Botón de ir al inicio */
 
 button#irArribaBtn {
   object-fit: fill;
@@ -109,35 +106,20 @@ button#irArribaBtn {
 
 /*Estilos para la barra superior*/
 .barraSuperior {
-  background-color: #000000; /* Color de fondo de la barra de navegación */
+  background-color: cadetblue; /* Color de fondo de la barra de navegación */
   color: #fff; /* Color de texto de la barra de navegación */
   padding: 10px; /* Espacio alrededor de los elementos de navegación */
   text-align: center;
   padding: 0 15px;
+  border-width: 1px;
+  border-style: double;
+  border-color: black;
 }
 
 .barraSuperior a {
-  display: inline-block; /* Hace que los elementos se muestren en línea horizontalmente */
-  margin-left: 20px; /* Agrega un margen entre los elementos */
+  margin-left: 10px;
+  margin-right: 10px;
   color: #fff;
-}
-
-.barraSuperior a:visited {
-  display: inline-block; /* Hace que los elementos se muestren en línea horizontalmente */
-  margin-left: 20px; /* Agrega un margen entre los elementos */
-  color: purple;
-}
-
-.barraSuperior a:link {
-  display: inline-block;
-  margin-left: 20px;
-  color: initial; /* Establece el color de enlace predeterminado */
-  text-decoration: none;
-}
-
-.barraSuperior a span {
-  display: inline-block; /* Hace que los elementos span se muestren en línea horizontalmente */
-  margin-right: 5px; /* Agrega un margen entre los elementos span y los h3 */
 }
 
 .barraSuperior a h3 {

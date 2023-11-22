@@ -6,8 +6,13 @@
 
     <link rel="stylesheet" href="index.css" />
     <script src="index.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="icon" href="image/videojuegos.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/style_no_modificar.css">
+    <link rel="stylesheet" href="style.css">
 
     <meta charset="iso-8559-1" />
     <meta name="description" content="TFG de Grado Superior" />
@@ -26,11 +31,11 @@
                     dark_mode
                 </span>
             </button>
-           <a href="#"> 
+            <a href="#">
                 <span class="material-symbols-outlined"> Home </span>
                 <h3>Inicio</h3>
             </a>
-            <a href="#"> 
+            <a href="./paginas/acercade.html">
                 <span class="material-symbols-outlined"> info </span>
                 <h3>Acerca de</h3>
             </a>
@@ -38,104 +43,75 @@
                 <span class="material-symbols-outlined"> search </span>
                 <h3>Servicios</h3>
             </a>
-            <a href="#"> 
-                <span class="material-symbols-outlined"> call </span> 
+            <a href="./paginas/contacto.html">
+                <span class="material-symbols-outlined"> call </span>
                 <h3>Contacto</h3>
             </a>
-            <a href="#"> 
+            <a href="#">
                 <span class="material-symbols-outlined"> login </span>
                 <h3>Registrarse</h3>
             </a>
         </div>
     </header>
-    <nav class="header-light">
-    </nav>
 
 
-    <nav id="navegacionprincipal"> <!-- Barra de Navegación -->
-        <ul> <!-- unorder list (listado en puntos)-->
-            <li> Quiénes somos </li>
-            <li> Nuestros productos </li>
-            <li> Contáctanos </li>
-            <li> Precios </li>
-        </ul>
+    <nav class="header-light"> </nav> <!-- IMAGEN CAMBIAR CLARO OSCURO -->
 
-        <ol> <!-- order list (listado en números/orden)-->
-            <li> Quiénes somos </li>
-            <li> Nuestros productos </li>
-            <li> Contáctanos </li>
-            <li> Precios </li>
-        </ol>
-    </nav>
+    <section id="slider">
+        <!-- <div id="box-slider"> fondo¿?¿?¿?¿?¿?
+          <img class="slider-image" src="assets/img/slide.jpg" alt="Slide image">
+        </div> -->
+        <!-- APARTADO 3 -->
+        <div class="wrapper-banners">
+            <div class="row">
+                <div class="col-4">
+                    <div class="box-banner">
+                        <img class="banner-image" src="./image/mariowonder.jpg" alt="Banner image">
+                        <h2 class="banner-title">Super Mario <br> Wonder </h2>
+                        <p class="banner-text">DESCRIPCION DEL JUEGO</p>
+                    </div>
+                </div>
 
-    <aside id="barralateral"> <!-- Barra lateral -->
-        <blockquote> Primer elemento </blockquote> <!-- blockquote se utiliza para largas citas -->
-        <blockquote> Segundo elemento </blockquote>
-        <blockquote> Tercer elemento </blockquote>
-    </aside>
+                <div class="col-4">
+                    <div class="box-banner">
+                        <img class="banner-image" src="./image/alanwake2.jpg" alt="Banner image">
+                        <h2 class="banner-title">Alan Wake 2</h2>
+                        <p class="banner-text">DESCRIPCION DEL JUEGO</p>
+                    </div>
+                </div>
 
-    <section id="contenidoprincipal"> <!-- Contenido principal -->
+                <div class="col-4">
+                    <div class="box-banner">
+                        <img class="banner-image" src="./image/zeldatotk.png" alt="Banner image">
+                        <h2 class="banner-title">Spiderman 2</h2>
+                        <p class="banner-text">DESCRIPCION DEL JUEGO</p>
+                    </div>
+                </div>
 
-        <article> <!-- Se usa para agrupar contenido que tenga que ver -->
 
-            <header>
-                <hgroup>
-                    <!-- Se usa para agrupar títulos y subtítulos, si sólo tienes un h1 por ejemplo no haría falta -->
-                    <h2> Título de la noticia 1</h2>
-                    <!-- Si ponemos h1 y luego h2, nos sale el subtítulo más grande que el título, por eso ponemos h2 y h3-->
-                    <h3> Subtítulo de la noticia 1</h3>
-                </hgroup>
-            </header>
+                <!-- <div class="col-4">
+                    <div class="box-banner">
+                        <img class="banner-image" src="./image/mariowonder.jpg" alt="Banner image">
+                        <h2 class="banner-title">Super Mario <br> Wonder </h2>
+                        <p class="banner-text">DESCRIPCION DEL JUEGO</p>
+                    </div>
+                </div>
 
-            <figure>
-                <img src="C:\Users\pau\Desktop\HTML\imagenes\paisaje_japon.jpg" />
-                <!--  <img src="imagenes\paisaje_japon.jpg"/>  Esto también serviría, ruta relativa o absoluta-->
-                <figcaption> Paisaje Japonés </figcaption> <!-- Escribir un pie de foto -->
-            </figure>
+                <div class="col-4">
+                    <div class="box-banner">
+                        <img class="banner-image" src="./image/baldursgate3.jpg" alt="Banner image">
+                        <h2 class="banner-title">Alan Wake 2</h2>
+                        <p class="banner-text">DESCRIPCION DEL JUEGO</p>
+                    </div>
+                </div>
 
-            <p> <mark> Noticia 1 </mark> </p> <!-- "mark" hace que resalte en subrayado el texto -->
-            <p> Seguimos hablando de <em> noticia 1 </em> </p> <!-- "em" = Cursiva-->
-            <p> Terminamos de hablar de la <strong> noticia 1 </strong> </p> <!-- "strong" = Negrita-->
-
-            <footer>
-                <p> Comentarios de usuarios </p>
-            </footer>
-
-        </article>
-
-        <article>
-
-            <header>
-                <h2> Título de la noticia 2</h2>
-            </header>
-
-            <p> <cite> El gato con botas </cite> </p>
-            <!-- "cite" = Títulos de libros, canciones, películas, trabajos propios, etc-->
-            <p> Una de las películas que más me ha gustado es <cite> El gato con botas 2 </cite> </p>
-            <p> Terminamos de hablar de la noticia 2 </p>
-
-            <footer>
-                <p> Comentarios </p>
-            </footer>
-
-        </article>
-
-        <article>
-
-            <header>
-                <hgroup>
-                    <h2> Título de la noticia 3</h2>
-                    <h3> Subtítulo de la noticia 3</h3>
-                </hgroup>
-                <time datetime="2023/01/31" pubdate> Noticia publicada el día 31/01/2023 </time>
-                <!-- Representar fechas y horas-->
-            </header>
-
-            <p> Noticia 3 </p>
-            <p> Seguimos hablando de noticia 3 </p>
-            <p> Terminamos de hablar de la noticia 3</p>
-
-        </article>
+                <div class="col-4">
+                    <div class="box-banner">
+                        <img class="banner-image" src="./image/spiderman2.jpg" alt="Banner image">
+                        <h2 class="banner-title">Spiderman 2</h2>
+                        <p class="banner-text">DESCRIPCION DEL JUEGO</p>
+                    </div>
+                </div> -->
 
     </section>
 
@@ -164,4 +140,5 @@
         <address> paumirallesdiaz@gmail.com </address>
     </footer>
 </body>
+
 </html>
