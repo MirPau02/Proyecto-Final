@@ -2,7 +2,6 @@
   text-decoration: none;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
 /*Modo oscuro/claro imagen*/
@@ -102,6 +101,14 @@ button#irArribaBtn {
   border-color: black;
 }
 
+/* Botones de cada juego */
+
+.botones-juegos{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 button.trailer {
   width: 65px; /* Ajusta el tamaño de la imagen según tus necesidades */
   height: 40px;
@@ -110,6 +117,26 @@ button.trailer {
 button.trailer:hover {
   background-color: red;
 }
+
+button.descripcion {
+  width: 65px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  height: 40px;
+}
+
+button.descripcion:hover {
+  background-color: red;
+}
+
+button.comentar {
+  width: 65px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  height: 40px;
+}
+
+button.comentar:hover {
+  background-color: red;
+}
+
+/* FIN BOTONES */
 
 .imagenSubir {
   width: 25px;
