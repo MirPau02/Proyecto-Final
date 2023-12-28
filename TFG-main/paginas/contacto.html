@@ -1,11 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contacto Goty</title>
 </head>
 <body>
-    <p>PÁGINA DE CONTACTO</p>
+
+<!-- Encabezado u otras secciones de tu página -->
+
+<section id="contacto">
+    <h2>Contacto</h2>
+    
+    <form action="formulario.php" method="post">
+        <label for="nombre">Nombre: </label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="asunto">Asunto:</label>
+        <input type="text" id="asunto" name="asunto" required>
+        
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        
+        <button type="submit">Enviar Mensaje</button>
+    </form>
+    
+    <p id="correo">Alternativamente, puedes contactarnos por correo electrónico a <a href="paumirallesdiaz@gmail.com">paumirallesdiaz@gmail.com</a>.</p>
+    <script>
+        // Script para copiar automáticamente el correo electrónico al hacer clic
+        document.getElementById('correo').addEventListener('click', function() {
+            // Crear un elemento de texto temporal
+            var aux = document.createElement('input');
+            // Asignar el valor del correo electrónico al elemento de texto
+            aux.setAttribute('value', 'paumirallesdiaz@gmail.com');
+            // Anexar el elemento de texto al cuerpo del documento
+            document.body.appendChild(aux);
+            // Seleccionar el contenido del elemento de texto
+            aux.select();
+            // Copiar el contenido seleccionado al portapapeles
+            document.execCommand('copy');
+            // Eliminar el elemento de texto temporal
+            document.body.removeChild(aux);
+            // Alerta opcional para notificar al usuario que el correo electrónico se ha copiado
+            alert('Correo electrónico copiado: paumirallesdiaz@gmail.com');
+        });
+    </script>
+    <!-- Otras informaciones de contacto como número de teléfono, dirección, etc. -->
+
+</section>
+
+<!-- Pie de página y otros elementos de tu página -->
+
 </body>
 </html>

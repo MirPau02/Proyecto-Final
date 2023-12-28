@@ -1,0 +1,66 @@
+.box-banner {
+  padding: 25px;
+  border-radius: 15px 15px 15px 15px;
+  background-color: black;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+/*Background de cada imagen*/
+.box-banner.outerWilds{
+  background-image: url('../../image/outerWildsBackground.jpg');
+  background-repeat: no-repeat;
+}
+
+.box-banner.cuphead {
+  background-image: url('../../image/cupheadBackground.jpg');
+  background-repeat: no-repeat;
+
+}
+
+.box-banner.hollowKnight {
+  background-image: url('../../image/hollowKnightBackground.jpg');
+  background-repeat: no-repeat;
+}
+
+.box-banner.littleNightmaresTwo {
+  background-image: url('../../image/littleNightmaresTwoBackground.jpg');
+  background-repeat: no-repeat;
+}
+
+.box-banner.cultOfTheLamb {
+  background-image: url('../../image/cultOfTheLambBackground');
+  background-repeat: no-repeat;
+}
+
+.box-banner.oriAndTheWillOfTheWisps {
+  background-image: url('../../image/oriAndTheWillOfTheWispsBackground');
+  background-repeat: no-repeat;
+}
+
+.box-banner .banner-image {
+  margin-bottom: 24px;
+  background-color: #39464f;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.box-banner .banner-title {
+  font-family: 'Diphylleia', serif; /*Tipografía del título de los juegos*/
+  margin-bottom: 20px;
+  font-size: 21px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.box-banner .banner-text {
+  margin-bottom: 10px;
+}
+
+.box-banner .banner-image:hover {
+  transition: 5s;
+  /* AÑADIR EL TEXTO */
+}

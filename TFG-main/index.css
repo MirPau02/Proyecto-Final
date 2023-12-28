@@ -1,24 +1,32 @@
 * {
+  /* ¿?¿?¿? */
   text-decoration: none;
   padding: 0;
   box-sizing: border-box;
 }
 
-/*Modo oscuro/claro imagen*/
-.header-dark {
-  background-image: url('image/20231003_172252.jpg');
-  background-repeat: no-repeat;
-  background-size: cover; /* Ajusta la imagen al tamaño del encabezado */
-  width: 100%;
-  height: 500px; /* Ajusta la altura del encabezado según tus necesidades */
+body { /*Da el "borde" a las cajas de arriba y abajo*/
+  padding: 5px;
 }
 
+/*Modo oscuro/claro imagen*/
 .header-light {
   background-image: url('image/1698951907866.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 500px; /* Ajusta la altura del encabezado según tus necesidades */
+  height: 500px;
+  /* Ajusta la altura del encabezado según tus necesidades */
+}
+
+.header-dark {
+  background-image: url('image/20231003_172252.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Ajusta la imagen al tamaño del encabezado */
+  width: 100%;
+  height: 500px;
+  /* Ajusta la altura del encabezado según tus necesidades */
 }
 
 /*Modo oscuro/claro el body*/
@@ -29,7 +37,7 @@ body.light-mode {
 
 body.dark-mode {
   background-color: #171717;
-  color: #ffffff; 
+  color: #ffffff;
 }
 
 button#modoOscuro {
@@ -38,7 +46,8 @@ button#modoOscuro {
   right: 20px;
   cursor: pointer;
   align-self: center;
-  width: 100px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  width: 100px;
+  /* Ajusta el tamaño de la imagen según tus necesidades */
   height: 50px;
   border-radius: 25%;
 }
@@ -51,47 +60,23 @@ header#cabeceraweb {
   object-fit: fill;
   padding-top: 0;
   margin-top: 0;
-  /*Esto del border es solo de prueba para saber sobre qué dimensiones puedo escribir
-  border-width: 1px;
-  border-style: double;
-  border-color: black;
-  width: 100%;*/
 }
 
 body {
+  /* ¿?¿?¿? */
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-footer{
-  text-align: center;
-  padding-top: 5px;
-  border-width: 1px;
-  border-style: double;
-  border-color: black;
-  width: 100%;
-  background-color: cadetblue;
-}
-
-.icono-social {
-  text-decoration: none;
-  width: 25px;
-  height: 25px;
-}
-
-.iconos {
-  justify-content: center;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
-
+/* IMAGEN SUBIR */
 button#irArribaBtn {
-  object-fit: fill; /*QUE HACE*/
+  object-fit: fill;
+  /*QUE HACE*/
   bottom: 20px;
   right: 20px;
-  cursor: pointer; /*QUE HACE*/
+  cursor: pointer;
+  /*QUE HACE*/
   align-self: center;
   width: 40px;
   height: 40px;
@@ -101,16 +86,47 @@ button#irArribaBtn {
   border-color: black;
 }
 
-/* Botones de cada juego */
+.imagenSubir {
+  width: 25px;
+  height: 25px;
+  object-fit: fill;
+}
 
-.botones-juegos{
+/* FOOTER */
+footer {
+  text-align: center;
+  padding-top: 5px;
+  border-width: 1px;
+  border-style: double;
+  border-color: black;
+  width: 100%;
+  background-color: cadetblue;
+}
+
+.iconos {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.icono-social {
+  text-decoration: none;
+  width: 25px;
+  height: 25px;
+}
+
+
+/* BOTONES JUEGOS */
+.botones-opciones {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 button.trailer {
-  width: 65px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  width: 80px;
+  /* Ajusta el tamaño de la imagen según tus necesidades */
   height: 40px;
 }
 
@@ -118,17 +134,19 @@ button.trailer:hover {
   background-color: red;
 }
 
-button.descripcion {
-  width: 65px; /* Ajusta el tamaño de la imagen según tus necesidades */
+button.btn-abrirDescripcion {
+  width: 80px;
+  /* Ajusta el tamaño de la imagen según tus necesidades */
   height: 40px;
 }
 
-button.descripcion:hover {
+button.btn-abrirDescripcion:hover {
   background-color: red;
 }
 
 button.comentar {
-  width: 65px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  width: 80px;
+  /* Ajusta el tamaño de la imagen según tus necesidades */
   height: 40px;
 }
 
@@ -136,21 +154,17 @@ button.comentar:hover {
   background-color: red;
 }
 
-/* FIN BOTONES */
-
-.imagenSubir {
-  width: 25px;
-  height: 25px;
-  object-fit: fill;
-}
 
 /*Estilos para la barra superior*/
 .barraSuperior {
-  background-color: cadetblue; /* Color de fondo de la barra de navegación */
-  color: #fff; /* Color de texto de la barra de navegación */
-  padding: 10px; /* Espacio alrededor de los elementos de navegación */
+  background-color: cadetblue;
+  /* Color de fondo de la barra de navegación */
+  color: #fff;
+  /* Color de texto de la barra de navegación */
+  padding: 10px;
+  /* Espacio alrededor de los elementos de navegación */
   text-align: center;
-  padding: 0 15px;
+  padding: 5px;
   border-width: 1px;
   border-style: double;
   border-color: black;
@@ -163,5 +177,6 @@ button.comentar:hover {
 }
 
 .barraSuperior a h3 {
-  display: inline-block; /* Hace que los elementos h3 se muestren en línea horizontalmente */
+  display: inline-block;
+  /* Hace que los elementos h3 se muestren en línea horizontalmente */
 }

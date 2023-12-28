@@ -4,15 +4,19 @@
 <head>
     <title> GOTY </title>
 
-    <link rel="stylesheet" href="index.css" />
     <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="image/videojuegos.png" type="image/x-icon">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="icon" href="image/videojuegos.png" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style> /*Tipografía de los títulos de los juegos*/
+        @import url('https://fonts.googleapis.com/css2?family=Diphylleia&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
     <link rel="stylesheet" href="assets/css/grid.css">
-    <link rel="stylesheet" href="assets/css/style_no_modificar.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./popUp.css">
+    <link rel="stylesheet" href="assets/css/opcionesCajas.css">
 
     <meta charset="iso-8559-1" />
     <meta name="description" content="TFG de Grado Superior" />
@@ -31,6 +35,7 @@
                     dark_mode
                 </span>
             </button>
+
             <a href="#">
                 <span class="material-symbols-outlined"> Home </span>
                 <h3>Inicio</h3>
@@ -54,35 +59,35 @@
         </div>
     </header>
 
-
     <nav class="header-light"> </nav> <!-- IMAGEN CAMBIAR CLARO OSCURO -->
 
     <section id="slider">
-        <!-- <div id="box-slider"> fondo¿?¿?¿?¿?¿?
-          <img class="slider-image" src="assets/img/slide.jpg" alt="Slide image">
-        </div> -->
-        <!-- APARTADO 3 -->
         <div class="wrapper-banners">
             <div class="row">
                 <div class="col-4">
-                    <div class="box-banner">
-                        <img class="banner-image" src="./image/mariowonder.jpg" alt="Banner image">
-                        <h2 class="banner-title">Super Mario <br> Wonder </h2>
-                        <p class="banner-text">DESCRIPCION DEL JUEGO</p>
+                    <div class="box-banner outerWilds">
+                        <img class="banner-image" src="./image/outerWilds.jpg" alt="Banner image">
+                        <h2 class="banner-title">Outer <br> Wilds </h2>
+                        <!-- <p class="banner-text">DESCRIPCION DEL JUEGO</p> -->
 
                         <!-- ENLACE AL VIDEO TUTORIAL -->
-                        <div class="botones-juegos">
-                            <a href="https://www.youtube.com/watch?v=GZO7MgHNqI4">
+                        <div class="botones-opciones">
+                            <a href="https://www.youtube.com/watch?v=d6LGnVCL1_A&t=29s">
                                 <button class="trailer">
                                     Trailer
                                 </button>
                             </a>
-                            <a href="https://www.youtube.com/watch?v=GZO7MgHNqI4">
-                                <button class="descripcion">
-                                    Descripción
-                                </button>
-                            </a>
-                            <a href="https://www.youtube.com/watch?v=GZO7MgHNqI4">
+                            <button class="btn-abrirDescripcion"> Descripción </button>
+                            <dialog class="popUp">
+                                <h2> Outer Wilds</h2>
+                                <p> Outer Wilds es un galardonado título de mundo abierto, que se desarrolla en un
+                                    enigmático sistema solar confinado a un bucle temporal infinito.</p>
+                                <p>Fecha de lanzamiento: 28 de mayo de 2019</p>
+                                <p>Desarrolladora: Mobius Digital, Annapurna Interactive</p>
+                                <p>Plataformas: Xbox, Nintendo Switch, PC, PlayStation</p>
+                                <button class="btn-cerrarDescripcion">Cerrar</button>
+                            </dialog>
+                            <a href="#">
                                 <button class="comentar">
                                     Comentar
                                 </button>
@@ -92,23 +97,26 @@
                 </div>
 
                 <div class="col-4">
-                    <div class="box-banner">
-                        <img class="banner-image" src="./image/alanwake2.jpg" alt="Banner image">
-                        <h2 class="banner-title">Alan Wake <br> 2</h2>
-                        <p class="banner-text">DESCRIPCION DEL JUEGO</p>
+                    <div class="box-banner cuphead">
+                        <img class="banner-image" src="./image/cuphead.jpg" alt="Banner image">
+                        <h2 class="banner-title">Cuphead <br> + DLC</h2>
+                        <!-- <p class="banner-text">DESCRIPCION DEL JUEGO</p> -->
 
-                        <div class="botones-juegos">
-                            <a href="https://www.youtube.com/watch?v=GZO7MgHNqI4">
+                        <div class="botones-opciones">
+                            <a href="https://www.youtube.com/watch?v=81zM_vg96VY">
                                 <button class="trailer">
                                     Trailer
                                 </button>
                             </a>
-                            <a href="https://www.youtube.com/watch?v=GZO7MgHNqI4">
-                                <button class="descripcion">
-                                    Descripción
-                                </button>
-                            </a>
-                            <a href="https://www.youtube.com/watch?v=GZO7MgHNqI4">
+                            <button class="btn-abrirDescripcion"> Descripción </button>
+                            <dialog class="popUp">
+                                <h2>Cuphead</h2>
+                                <p>Fecha de lanzamiento: 2017</p>
+                                <p>Desarrolladora: Mobius Digital, Annapurna Interactive</p>
+                                <p>Plataformas: Xbox, Nintendo Switch, PC, PlayStation</p>
+                                <button class="btn-cerrarDescripcion">Cerrar</button>
+                            </dialog>
+                            <a href="#">
                                 <button class="comentar">
                                     Comentar
                                 </button>
@@ -118,23 +126,26 @@
                 </div>
 
                 <div class="col-4">
-                    <div class="box-banner">
-                        <img class="banner-image" src="./image/zeldatotk.png" alt="Banner image">
-                        <h2 class="banner-title">Zelda Tears <br> Of The Kingdom </h2>
-                        <p class="banner-text">DESCRIPCION DEL JUEGO</p>
+                    <div class="box-banner hollowKnight">
+                        <img class="banner-image" src="./image/hollowKnight.jpg" alt="Banner image">
+                        <h2 class="banner-title">Hollow <br> Knight </h2>
+                        <!-- <p class="banner-text">DESCRIPCION DEL JUEGO</p> -->
 
-                        <div class="botones-juegos">
-                            <a href="https://www.youtube.com/watch?v=GZO7MgHNqI4">
+                        <div class="botones-opciones">
+                            <a href="https://www.youtube.com/watch?v=UAO2urG23S4">
                                 <button class="trailer">
                                     Trailer
                                 </button>
                             </a>
-                            <a href="https://www.youtube.com/watch?v=GZO7MgHNqI4">
-                                <button class="descripcion">
-                                    Descripción
-                                </button>
-                            </a>
-                            <a href="https://www.youtube.com/watch?v=GZO7MgHNqI4">
+                            <button class="btn-abrirDescripcion"> Descripción </button>
+                            <dialog class="popUp">
+                                <h2>Hollow Knight</h2>
+                                <p>Fecha de lanzamiento: 2017</p>
+                                <p>Desarrolladora: Mobius Digital, Annapurna Interactive</p>
+                                <p>Plataformas: Xbox, Nintendo Switch, PC, PlayStation</p>
+                                <button class="btn-cerrarDescripcion">Cerrar</button>
+                            </dialog>
+                            <a href="#">
                                 <button class="comentar">
                                     Comentar
                                 </button>
@@ -144,51 +155,96 @@
                 </div>
             </div>
 
+            <br>
+            <br>
 
-    <br>
-    <br>
-            <!-- <div class="row">
+            <div class="row">
                 <div class="col-4">
-                    <div class="box-banner">
-                        <img class="banner-image" src="./image/spiderman2.jpg" alt="Banner image">
-                        <h2 class="banner-title">Super Mario <br> Wonder </h2>
-                        <p class="banner-text">DESCRIPCION DEL JUEGO</p>
+                    <div class="box-banner littleNightmaresTwo">
+                        <img class="banner-image" src="./image/littleNightmaresTwo.jpg" alt="Banner image">
+                        <h2 class="banner-title">Little <br>Nightmares 2 </h2>
+                        <!-- <p class="banner-text">DESCRIPCION DEL JUEGO</p> -->
 
-                        <a href="https://www.youtube.com/watch?v=GZO7MgHNqI4">
-                            <button class="trailer">
-                                Trailer
-                            </button>
-                        </a>
+                        <div class="botones-opciones">
+                            <a href="https://www.youtube.com/watch?v=AI9zBBTyX-E">
+                                <button class="trailer">
+                                    Trailer
+                                </button>
+                            </a>
+                            <button class="btn-abrirDescripcion"> Descripción </button>
+                            <dialog class="popUp">
+                                <h2>Little Nightmares 2</h2>
+                                <p>Fecha de lanzamiento: 2017</p>
+                                <p>Desarrolladora: Mobius Digital, Annapurna Interactive</p>
+                                <p>Plataformas: Xbox, Nintendo Switch, PC, PlayStation</p>
+                                <button class="btn-cerrarDescripcion">Cerrar</button>
+                            </dialog>
+                            <a href="#">
+                                <button class="comentar">
+                                    Comentar
+                                </button>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-4">
-                    <div class="box-banner">
-                        <img class="banner-image" src="./image/baldursgate3.jpg" alt="Banner image">
-                        <h2 class="banner-title">Alan Wake <br> 2</h2>
-                        <p class="banner-text">DESCRIPCION DEL JUEGO</p>
+                    <div class="box-banner cultOfTheLamb">
+                        <img class="banner-image" src="./image/cultOfTheLamb.jpg" alt="Banner image">
+                        <h2 class="banner-title">Cult Of <br> The Lamb</h2>
+                        <!-- <p class="banner-text">DESCRIPCION DEL JUEGO</p> -->
 
-                        <a href="https://www.youtube.com/watch?v=dlQ3FeNu5Yw">
-                            <button class="trailer">
-                                Trailer
-                            </button>
-                        </a>
+                        <div class="botones-opciones">
+                            <a href="https://www.youtube.com/watch?v=yplh1d-whOc">
+                                <button class="trailer">
+                                    Trailer
+                                </button>
+                            </a>
+                            <button class="btn-abrirDescripcion"> Descripción </button>
+                            <dialog class="popUp">
+                                <h2>Cult Of The Lamb</h2>
+                                <p>Fecha de lanzamiento: 2017</p>
+                                <p>Desarrolladora: Mobius Digital, Annapurna Interactive</p>
+                                <p>Plataformas: Xbox, Nintendo Switch, PC, PlayStation</p>
+                                <button class="btn-cerrarDescripcion">Cerrar</button>
+                            </dialog>
+                            <a href="#">
+                                <button class="comentar">
+                                    Comentar
+                                </button>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-4">
-                    <div class="box-banner">
-                        <img class="banner-image" src="./image/re4r.jpg" alt="Banner image">
-                        <h2 class="banner-title">Zelda Tears <br> Of The Kingdom </h2>
-                        <p class="banner-text">DESCRIPCION DEL JUEGO</p>
+                    <div class="box-banner oriAndTheWillOfTheWisps">
+                        <img class="banner-image" src="./image/oriAndTheWillOfTheWisps.jpg" alt="Banner image">
+                        <h2 class="banner-title">Ori and the <br> Will of The Wisps </h2>
+                        <!-- <p class="banner-text">DESCRIPCION DEL JUEGO</p> -->
 
-                        <a href="https://www.youtube.com/watch?v=nq1M_Wc4FIc">
-                            <button class="trailer">
-                                Trailer
-                            </button>
-                        </a>
+                        <div class="botones-opciones">
+                            <a href="https://www.youtube.com/watch?v=GZO7MgHNqI4">
+                                <button class="trailer">
+                                    Trailer
+                                </button>
+                            </a>
+                            <button class="btn-abrirDescripcion"> Descripción </button>
+                            <dialog class="popUp">
+                                <h2> Ori And The Will Of The Wisps</h2>
+                                <p>Fecha de lanzamiento: 2017</p>
+                                <p>Desarrolladora: Mobius Digital, Annapurna Interactive</p>
+                                <p>Plataformas: Xbox, Nintendo Switch, PC, PlayStation</p>
+                                <button class="btn-cerrarDescripcion">Cerrar</button>
+                            </dialog>
+                            <a href="#">
+                                <button class="comentar">
+                                    Comentar
+                                </button>
+                            </a>
+                        </div>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
 
@@ -198,7 +254,7 @@
         <img src="image/icon-arrow-up.png" class="imagenSubir" />
     </button>
 
-    <footer> <!-- Información institucional -->
+    <footer>
         <div class="iconos">
             <a href="https://www.google.com/search?q=google+snake&client=firefox-b-d&sca_esv=569475139&sxsrf=AM9HkKntoTES-XJEATN4DK_rFAzLVgfXUg%3A1696007037644&ei=fQMXZdPqJtq6kdUP07XUmQI&oq=googel&gs_lp=Egxnd3Mtd2l6LXNlcnAiBmdvb2dlbCoCCAAyBxAjGLECGCcyBxAjGLECGCcyDRAuGIoFGLEDGIMBGEMyBxAAGIoFGEMyBxAuGIoFGEMyBxAAGIoFGEMyExAuGIoFGLEDGIMBGMcBGNEDGEMyDRAAGIoFGLEDGIMBGEMyBxAAGIoFGEMyBxAAGIoFGEMyHBAuGIoFGLEDGIMBGEMYlwUY3AQY3gQY4ATYAQFIvxNQ8wNYwQhwAXgBkAEAmAFpoAGlBKoBAzQuMrgBA8gBAPgBAcICChAAGEcY1gQYsAPCAgoQABiKBRiwAxhDwgIKEC4YigUYsAMYQ8ICBxAjGIoFGCfCAgQQIxgnwgIWEC4YigUYQxiXBRjcBBjeBBjgBNgBAeIDBBgAIEGIBgGQBgq6BgYIARABGBQ&sclient=gws-wiz-serp"
                 title="Instagram">
